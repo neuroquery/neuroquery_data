@@ -23,14 +23,13 @@
   `vocabulary.csv`, such as "brain stem" -> "brainstem".
 
 - `corpus_metadata.csv` contains information about each document in the training
-  corpus (plus a few more documents): `pmid` (PubMed id), `title`, and
-  `pubmed_url` (URL of the corresponding page on the PubMed website). shape:
-  (13881, 3)
+  corpus: `pmid` (PubMed id), `title`, and `pubmed_url` (URL of the
+  corresponding page on the PubMed website). shape: (n, 3)
 
 - `corpus_tfidf.npz` contains the TFIDF features of the training corpus. It can
   be loaded with `scipy.sparse.load_npz`. It is a matrix; columns correspond to
   the terms in `vocabulary.csv` and lines correspond to the lines of
-  `corpus_metadata.csv`. shape: (13881, V)
+  `corpus_metadata.csv`. shape: (n, V)
 
 ### `regression`
 
