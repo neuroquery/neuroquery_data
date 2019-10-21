@@ -1,1 +1,1 @@
-Data used by https://neuroquery.saclay.inria.fr
+Data used by https://neuroquery.org
